@@ -1,0 +1,35 @@
+{
+  "name": "hub2cw",
+  "version": "0.0.1",
+  "description": "Post GitHub Status to Chatwork via Amazon SNS and Lambda",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Nate-River56/hub2cw.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nate-River56/hub2cw/issue"
+  },
+  "engine": {
+    "node": ">=4.3"
+  },
+  "keywords": [
+    "chat",
+    "chatwork",
+    "aws-sns",
+    "aws-lambda"
+  ],
+  "author": {
+    "name": "Nate-River56",
+    "email": "hydrangea56@me.com",
+    "url": "https://github.com/Nate-River56"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Nate-River56/hub2cw/issues"
+  },
+  "homepage": "https://github.com/Nate-River56/hub2cw#readme"
+}
