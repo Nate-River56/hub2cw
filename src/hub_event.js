@@ -1,12 +1,10 @@
 import builder from './builder.js';
 
-export default hub;
-
-hub.getmsg = (event) => {
-  let eventName = event.Records[0].
-    Sns.MessageAttributes['X-Github-Event'].value;
+exports.getmsg = (event) => {
+  let eventName = event.Records[0].Sns.MessageAttributes['X-Github-Event'].Value;
 
   const payload = JSON.parse(event.Records[0].Sns.Message);
+  console.log(payload);
 
   let text = '';
 
@@ -87,6 +85,7 @@ hub.getmsg = (event) => {
     // branches. Commits via API actions that update references
     // are also counted. This is the default event.
     case 'push':
+      console.log("Pushing");
       text = builder.push(payload);
     break;
 
