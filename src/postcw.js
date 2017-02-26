@@ -2,7 +2,7 @@ import request from 'superagent';
 
 export default post;
 
-const post(api_token, room_id, msg) => {
+const post = (api_token, room_id, msg) => {
   return new Promise((resolve, reject) => {
     request
       .post(endpoint(room_id))
@@ -12,6 +12,8 @@ const post(api_token, room_id, msg) => {
         if (!err && res.statusCode == 200){
           resolve(res);
         } else {
+          console.log(res);
+          console.log(err);
           reject(err);
         }
       })
