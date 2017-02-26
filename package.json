@@ -4,7 +4,7 @@
   "description": "Post GitHub Status to Chatwork via Amazon SNS and Lambda",
   "main": "index.js",
   "scripts": {
-    "babel": "babel src/* -o lib/"
+    "babel": "babel src -d lib"
   },
   "repository": {
     "type": "git",
