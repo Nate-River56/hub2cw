@@ -2,13 +2,13 @@
 import hub from './hub_event.js';
 import cw from './postcw.js';
 
-export default hub2cw;
-
-hub2cw.run = (event, context) => {
+exports.run = (event, context) => {
 
   let text = '';
 
   text = hub.getmsg(event);
+
+  console.log(text);
 
   if(!text){
     context.done();
