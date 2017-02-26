@@ -1,6 +1,6 @@
-export default getmsg;
+export default hub;
 
-const getmsg = (event) => {
+hub.getmsg = (event) => {
   let eventName = event.Records[0].
     Sns.MessageAttributes['X-Github-Event'].value;
 

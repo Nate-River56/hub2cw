@@ -1,8 +1,8 @@
 import request from 'superagent';
 
-export default post;
+export default cw;
 
-const post = (api_token, room_id, msg) => {
+cw.message = (api_token, room_id, msg) => {
   return new Promise((resolve, reject) => {
     request
       .post(endpoint(room_id))
