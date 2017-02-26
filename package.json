@@ -4,7 +4,7 @@
   "description": "Post GitHub Status to Chatwork via Amazon SNS and Lambda",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "babel": "babel src/* -o lib/"
   },
   "repository": {
     "type": "git",
@@ -31,7 +31,7 @@
   "homepage": "https://github.com/Nate-River56/hub2cw#readme",
   "devDependencies": {
     "babel-cli": "^6.23.0",
-    "babel-preset-es2015": "^6.22.0"
+    "babel-preset-env": "^1.1.10"
   },
   "dependencies": {
     "superagent": "^3.5.0"
