@@ -19,3 +19,4 @@ deployment:
       - npm run babel
       - npm run package
       - cp hub2cw.zip ${CIRCLE_ARTIFACTS}
+      - npm run deploy
