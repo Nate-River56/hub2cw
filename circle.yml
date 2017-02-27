@@ -16,5 +16,6 @@ deployment:
   master:
     branch: master
     commands:
+      - npm run babel
       - npm run package
-      - cp hub2slack.zip ${CIRCLE_ARTIFACTS}
+      - cp hub2cw.zip ${CIRCLE_ARTIFACTS}
