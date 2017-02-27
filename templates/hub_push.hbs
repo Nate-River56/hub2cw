@@ -1,27 +1,12 @@
 -- Push event --
 CompareURL: {{compare}}
 {{#commits}}
-[info][title]{{message}}[/title]
-URL: {{url}}
+[info][title]{{message}}[/title]URL: {{url}}
 Commiter: {{committer.username}} ({{committer.name}})
-[hr]
-Added:
-  [code]
-  {{#added}}
-  {{this}}
-  {{/added}}
-  [/code]
-Modified:
-  [code]
-  {{#modified}}
-  {{this}}
-  {{/modified}}
-  [/code]
-Removed:
-  [code]
-  {{#removed}}
-  {{this}}
-  {{/removed}}
-  [/code]
-{{/commits}}
-
+[hr]{{#if added}}Added:[code]{{#added}}{{this}}
+{{/added}}[/code]
+{{/if}}{{#if modified}}Modified:[code]{{#modified}}{{this}}
+{{/modified}}[/code]
+{{/if}}{{#if removed}}Removed:[code]{{#removed}}{{this}}
+{{/removed}}[/code]
+{{/if}}[/info]{{/commits}}
