@@ -17,6 +17,5 @@ deployment:
     branch: master
     commands:
       - npm run babel
-      - npm run package
+      - npm run pkg
       - cp hub2cw.zip ${CIRCLE_ARTIFACTS}
-      - npm run deploy

@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "babel": "babel src -d lib",
-    "package": "zip -q -r hub2cw.zip index.js lib templates node_modules",
-    "deploy": "aws s3 cp hub2cw.zip s3://${S3_BUCKET} --acl private && aws lambda update-function-code --function-name ${FUNCTION_NAME} --s3-bucket ${S3_BUCKET} --s3-key hub2cw.zip --no-publish --region ap-northeast-1"
+    "pkg": "zip -q -r hub2cw.zip index.js lib templates node_modules"
   },
   "repository": {
     "type": "git",
