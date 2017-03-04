@@ -126,5 +126,7 @@ exports.getmsg = (event) => {
     break;
   }
 
+  console.log(text);
+
   return text;
 }
