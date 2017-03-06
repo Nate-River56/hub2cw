@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "babel": "babel src -d lib",
-    "pkg": "zip -q -r hub2cw.zip index.js lib templates node_modules"
+    "pkg": "zip -q -r hub2cw.zip lib templates node_modules"
   },
   "repository": {
     "type": "git",

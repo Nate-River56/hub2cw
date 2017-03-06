@@ -3,7 +3,7 @@ import handlebars from 'handlebars';
 
 exports.push = (payload) => {
   const source = fs.readFileSync(
-    './templates/hub_push.hbs',
+    '../templates/hub_push.hbs',
     'utf-8'
   );
   console.log(source);
