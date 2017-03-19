@@ -1,6 +1,6 @@
 import aws from 'aws-sdk';
 
-exports.dec = (enc_token) =>{
+exports.decrypt = (enc_token) =>{
   return new Promise((resolve, reject) => {
     const kms = new aws.KMS();
     kms.decrypt({CiphertextBlob: new Buffer(enc_token, 'base64')}, (err, data) => {
